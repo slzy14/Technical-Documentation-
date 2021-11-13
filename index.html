@@ -1,0 +1,484 @@
+<style >
+	
+	html,
+body {
+  min-width: 290px;
+  color: green;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: green;
+}
+
+header {
+  background-color:green;
+  color: white;
+  
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Xbox Documentation</title>
+</head>
+<nav id="navbar">
+  <header>Xbox one controller Documentation</header>
+  <ul style="background-color:green";>
+    <li><a class="nav-link" href="#Introduction" style="color:white;">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        style="color:white;">Xbox one controller Layout (Front)</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#JavaScript_and_Java" style="color:white;">Xbox one controller Layout (Back)</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world" style="color:white;">Paring to a Windows Device</a></li>
+    <li><a class="nav-link" href="#Variables" style="color:white;">Paring to an android Device</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_variables" style="color:white;">Paring to an IOS Device</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_scope" style="color:white;">Updating Wirelessly</a></li>
+    <li><a class="nav-link" href="#Constants" style="color:white;">Update With USB</a></li>
+    <li><a class="nav-link" href="#Data_types" style="color:white;">Update With PC</a></li>
+    <li>
+     
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>&nbsp;Introduction</header>
+    <article>
+      <p>
+       The Xbox Wireless Controller is the primary game controller for the Xbox One and Xbox Series X/S home video game consoles, also commercialized for its use in Windows-based PCs, and compatible with other operating systems such as macOS, Linux, iOS and Android. The controller maintains the overall layout found in the Xbox 360 controller, but with various tweaks to its design, such as a revised shape, redesigned analog sticks, shoulder buttons, and triggers, along with new rumble motors within the triggers to allow for directional haptic feedback.
+      </p>
+
+     
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>&nbsp;Xbox one Controller Layout (Front)</header>
+    
+    <img width="700px" src="https://compass-ssl.xboxlive.com/assets/c1/95/c19568c4-c7b8-4b5f-beec-6a7202778cba.jpg?n=xbox-one-wireless-controller-front.jpg">
+    
+    <article>
+      <p>Refer to the image above. (Front)</p>
+
+      <ul>
+        <li>
+         1. Left stick
+        </li>
+        <li>2. Left bumper</li>
+        <li>
+          3. View button 
+      </li>
+       <li>
+       4. USB charge port
+      </li>
+     <li>
+       5. Xbox button
+      </li>
+   <li>
+       6. Menu button
+      </li>
+ <li>
+       7. Right bumper 
+   </li>
+       <li>
+        8. Directional pad (D-pad)
+         </li>
+        <li>
+        9. Expansion port
+         </li>
+         <li>
+       10. Right stick
+         </li>
+        <li>
+        16. 3.5mm port
+         </li>
+         
+         <li>
+         X button
+         </li>
+        <li>
+         Y button
+         </li>
+         <li>
+         A button
+         </li>
+        <li>
+         B button
+         </li>
+      </ul>
+      <header>&nbsp;Xbox Controller Layout Infromation (Front)</header>
+      <ul>
+        <li>
+          <strong> Left stick (1) and right stick (10):</strong> These are small joysticks, used to interact with games, apps, and the Xbox console. These move directionally, and they can also function as clickable buttons when you press them.
+        </li>
+        <li><strong>Left bumper (2) and right bumper (7):</strong> These oblong-shaped controls reside on the top of the controller to the left and right of the USB port. Use these to interact with games, apps, and the Xbox console. They’re often used to jump between sections of the user interface but can perform different actions depending on the game.</li>
+        <li>
+          <strong> View button (3) :</strong> This button is just to the lower left of the <strong>Xbox</strong> button. The button’s functions vary depending on the app or game.
+      </li>
+       <li>
+         <strong>USB charge port (4):</strong> This port is on the top edge of the controller above the <strong>Xbox</strong> button . It's a recessed mini-USB port, which connects your wireless controller to the console using a mini-USB cable.
+      </li>
+     <li>
+       <strong> Xbox button (5) :</strong> This round button is at the top front face of the controller. It has multiple functions:
+       
+       <ul>
+         <li>
+           When the controller is turned off, pressing this button turns on the controller. It will also turn on the console if the console is not already on.
+         </li>
+         
+         <li>
+           When the controller is turned on:
+           
+           <ol>
+             <li>Pressing this button once will open the guide on the Xbox console. On a Windows device during gameplay, this button will open Xbox Game Bar. <strong>Exception:</strong> During game streaming through the Xbox Console Companion app for Windows, pressing this button returns you to the Home screen of the Xbox app for Windows.</li>
+             <li>Pressing and holding this button will open the <strong>What do you want to do?</strong> screen. From there, you can turn off the console or controller, restart the console, or turn on Narrator or Magnifier.</li>
+             <li>Pressing and holding this button for about 6 seconds turns off the controller.</li>
+           </ol>
+         </li>
+         </ul>
+      </li>
+   <li>
+     <strong> Menu button (6) :</strong> This button is just to the lower right of the Xbox button . Use this button to access game and app menu options like Settings and Help, along with commands within the user interface such as “Go to my channel.”
+      </li>
+ <li>
+   <strong>Menu button (6) :</strong> This button is just to the lower right of the Xbox button . Use this button to access game and app menu options like Settings and Help, along with commands within the user interface such as “Go to my channel.”
+   </li>
+       <li>
+        <strong>Expansion port (9): </strong>This is a recessed port on the bottom-side edge of the controller. It's used to connect other accessories, such as an Xbox One Chat Headset.
+         </li>
+        <li>
+          <strong>3.5mm port (16):</strong> This is a recessed port next to the expansion port on the bottom-side edge of the controller. It’s used to connect compatible 3.5mm audio devices.
+         </li>
+         <li>
+           <strong> A, B, X, Y  buttons :</strong> These buttons sit on the right side of the controller. The Y button sits in the top position, with B on the right, A on the bottom, and X on the left. Used to interact with games, apps, and the console interface.
+         </li>
+       
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="JavaScript_and_Java">
+    <header>&nbsp;Xbox one Controller Layout (Back)</header>
+    <img width="700px" src="https://compass-ssl.xboxlive.com/assets/31/50/3150e4aa-de45-4e0b-816d-0af85861adbc.jpg?n=xbox-one-wireless-controller-back.jpg">
+    
+    <article>
+      <p>Refer to the image above. (Back)</p>
+
+      <ul>
+        <li>
+         2. Left bumper
+        </li>
+        <li>4. USB charge port</li>
+        <li>
+          7. Right bumper 
+      </li>
+       <li>
+       9. Expansion port
+      </li>
+     <li>
+       11. Right trigger
+      </li>
+   <li>
+       12. IR window
+      </li>
+ <li>
+       13. Pair button )))
+   </li>
+       <li>
+        14. Left trigger
+         </li>
+        <li>
+        15. Battery cover
+         </li>
+         <li>
+       	
+        16. 3.5mm port
+         </li>
+       
+      </ul>
+      <header>Xbox Controller Layout Infromation (Back)</header>
+      <ul>
+        <li>
+          <strong> Left bumper (2) and right bumper (7):</strong> These oblong-shaped controls sit on the top of the controller to the left and right of the USB port. They’re used to interact with games, apps, and the Xbox console. They’re often used to jump between sections of the user interface but can perform different actions depending on the game.
+        </li>
+        <li><strong>USB charge port (4):</strong> This port is on the top edge of the controller above the <strong>Xbox</strong> button . It's a recessed mini-USB port, which connects your wireless controller to the console using a mini-USB cable.</li>
+        <li>
+          <strong> Expansion port (9): </strong> This is a recessed port on the bottom-side edge of the controller. It's used to connect other accessories, such as an Xbox One Chat Headset.
+      </li>
+       <li>
+         <strong>Infrared (IR) window (12) :</strong> Hidden behind the “smoked” plastic next to the USB port are infrared LEDs used for auto-pairing users to the controller via a Kinect sensor.
+      </li>
+     <li>
+       <strong> Pair button (13):</strong>This small, slightly raised button is just to the left of the USB port on the top edge of the controller. It’s used to wirelessly connect the controller to a console and to enroll in Bluetooth pairing on a Windows device.
+        </li>
+        
+          <li>
+       <strong> Right trigger (11) and left trigger (14):</strong>Positioned just below the bumpers on the front-top edge of the controller, these are pressable controls used during gameplay. They often vibrate to provide feedback during the games, though you can turn off vibration in the controller settings.
+        </li>
+        
+        <li>
+       <strong> Battery compartment cover (15):</strong>This sits in the middle of the back of the controller.
+        </li>
+        
+        <li>
+       <strong>3.5mm port (16): </strong> This is a recessed port next to the expansion port on the bottom-side edge of the controller. It’s used to connect compatible 3.5mm audio devices.
+        </li>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>&nbsp;Paring to a Windows Device</header>
+    <article>
+     <ol>
+       <li>Make sure you have updated your PC and your controller.</li>
+       <li>Turn on your controller by pressing the <strong>Xbox</strong> button.</li>
+       <li>Press the controller’s <strong>Pair</strong> button for 3 seconds and release.</li>
+       <li>On your PC, select the <string>Start</striong> button , and then select <strong>Settings</strong> > <strong>Devices</strong> > <strong>Bluetooth</strong>.</li>
+       <li>Turn <strong>Bluetooth</strong> to On so that it can discover Bluetooth devices.</li>
+       <li>Select Add <strong>Bluetooth</strong> or <strong>other device</strong>.</li>
+       <li>In the <strong>Add a device</strong> screen, select<strong> Bluetooth </strong>and wait for <strong>Xbox Wireless Controller</strong> to appear on the list of devices.</li>
+          <img width="700px" src="https://compass-ssl.xboxlive.com/assets/ab/c8/abc8ad6c-4ec0-40bb-8b16-f3307301ced3.png?n=Xbox-wireless-controller-bluetooth-add-device.png">
+         <li>When the controller is recognized, select it. You’ll see <strong>“Your device is ready to go!” </strong>when the controller is connected.
+</li>
+       <p><strong>Note :</strong> If you’re connecting your controller to your PC while using the Xbox Wireless Adapter for Windows 10, make sure to select Everything else in step 7, and then follow step 8.</p>
+       
+       
+      </ol>
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>&nbsp;Paring to an Android Device</header>
+    
+    <p style="color:rgb(70, 71, 70);">
+      <strong>Note</strong> When using your Xbox controller with a mobile device, your performance may vary depending on the device and the mobile operating system version.
+    </p>
+   <ol style="color:rgb(70, 71, 70);">
+     <li>Make sure you have updated your controller.</li>
+     <li>Turn on your controller by pressing the <strong>Xbox</strong> button.</li>
+     <li>Press the controller’s <strong>Pair</strong> button for 3 seconds and release.
+</li>
+     <li>On your Android device, open Bluetooth by going to<strong> Apps</strong> > <strong>Settings</strong> > <strong>Connections</strong> > <strong>Bluetooth</strong> > <strong>Turn On</strong>.</li>
+     <li>A window on your phone will show a list of nearby Bluetooth devices that are active for pairing. Select your<strong> Xbox Wireless Controller</strong> from the list.</li>
+     <li>When the controller has successfully paired, you’ll see<strong> Connected</strong> below the Xbox Wireless Controller.</li>
+     <p><strong>Note :</strong> If you have any problems pairing or using your Xbox Wireless Controller with your Android device, consult your device’s manufacturer’s support website.</p>
+    </ol>
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>&nbsp;Paring to an IOS Device</header>
+    <article>
+
+      <p>
+        <strong>Note :</strong> When using your Xbox controller with a mobile device, your performance may vary depending on the device and the mobile operating system version.
+        can be used to declare both local and global variables.
+      </p>
+      <ol>
+        <li>On your Apple device, go to <strong>Settings</strong> > <strong>Bluetooth</strong>.</li>
+        <li>Make sure Bluetooth is turned on.</li>
+        <li>Turn on your Xbox Wireless Controller by pressing the <strong>Xbox</strong> button . If it’s already paired to an Xbox, turn off the controller, and then press and hold the <strong>Pair</strong> button for a few seconds.</li>
+        <li>Your available devices will load. Select <strong>Xbox Wireless Controller</strong>.</li>
+        <li>Wait until the controller and the Apple device show as paired.</li>
+      <p><strong>Note :</strong> If you have any problems pairing or using your Xbox Wireless Controller with your Android device, consult your device’s manufacturer’s support website.</p>
+      </ol>
+    </article>
+  </section>
+  <section class="main-section" id="Variable_scope">
+    <header>&nbsp;Updting Wirelessly</header>
+    <article>
+      <p>
+       An Xbox Wireless Controller purchased in or after June 2015 can take updates wirelessly without connecting with a USB cable. This controller has a small, circular 3.5-mm port on the bottom of the controller (controllers without this port must update via USB cable).
+      </p>
+       <img width="700px" src="https://compass-ssl.xboxlive.com/assets/1d/8f/1d8fa259-0adc-4135-9e53-98542ebcb7da.png?n=Xbox-Wireless-Controller.jpg">
+
+      <ol>
+        <li>If you have a stereo headset adapter, plug it into the bottom of your controller so it can also get updates.</li>
+         <li>If you're using a stereo headset adapter, plug in a headset (a headset must be plugged in so the adapter will turn on).</li>
+         <li>Press the <strong>Xbox</strong> button  to open the guide, select <strong>Profile & system</strong> > <strong>Settings</strong> > <strong>Devices & connections</strong> > <strong>Accessories</strong>, and then select the controller you want to update.</li>
+        <li>On the <strong>Xbox Wireless Controller</strong> screen, select <strong>“…”</strong> to check the firmware version for your controller.</li>
+         <ul>If it says <strong>“Update,”</strong> select <strong>Firmware version</strong>, and then follow the steps provided.
+        
+           <p><b>Things to keep in mind</b></p>
+        
+        <ul>
+         <li>The auto-detect feature of this update may not work immediately if you plugged your stereo headset adapter into the controller while downloading a system update, or while the console was turned off. To fix this, go to the Home screen and unplug the adapter. Then, plug the adapter back into the controller.</li>
+          <li>You only need to update your controller one time to use the stereo headset adapter. However, if you plan to use the stereo headset adapter with other Xbox controllers, you’ll need to follow this process for each controller. Additionally, check for new updates periodically as Xbox frequently ships new controller features and improvements</li>
+           </ul>
+      </ol>
+     
+        
+    </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>&nbsp;Update With USB</header>
+    <article>
+     <ol>
+       <li>If you have one, plug the stereo headset adapter into the bottom of your controller so it can also get updates.</li>
+       <li>If you're using a stereo headset adapter, plug in a headset (a headset must be plugged in so the adapter will turn on).
+</li>
+       <li>Plug the included USB cable into your Xbox’s USB port.</li>
+       <li>
+         
+         <ul>
+           <li>For Xbox Series X, the port is on the front right below the <strong>Pair</strong> button . For Xbox Series S, the port is on the front left next to the<strong> Pair</strong> button .</li>
+       <li>For original Xbox One, the port is on the left side of the console, around the corner from the disc tray. For Xbox One X and Xbox One S, the USB port is on the front under the<strong> Power</strong> button.</li>
+         </ul>
+       </li>
+       <li>Plug the other end of the USB cable into the top of the controller.</li>
+       <li>Instructions to install the update should automatically appear. Follow the instructions, and don’t disconnect the USB cable while the update is in progress. The process can take up to 3 minutes. If instructions to install the update don’t automatically appear, you can start the process manually. To do this, press the <strong>Xbox</strong> button  to open the guide, choose <strong>Profile & system</strong> > <strong>Settings</strong> > <strong>Devices & connections</strong> > <strong>Accessories</strong>, and then select the controller you want to update. On the <strong>Xbox Wireless Controller</strong> screen, select <strong> “…”</strong> to check the <strong>firmware version</strong> for your controller. If it says <strong>“Update,”</strong> select Firmware version, and then follow the steps provided.</li>
+           
+      </ol>
+         <p><b>Things to keep in mind</b></p>
+         <ul>
+       <li>The auto-detect feature of this update may not work immediately if you plugged your stereo headset adapter into the controller while downloading a system update, or while the console was turned off. To resolve this, go to the Home screen and unplug the adapter. Then, plug the adapter into the controller.</li>
+       <li>You only need to update your controller one time to use the stereo headset adapter. However, if you plan to use the stereo headset adapter with other Xbox controllers, you’ll need to follow this process for each controller. Additionally, check for new updates periodically as Xbox frequently ships new controller features and improvements.</li>
+           <ul>
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>&nbsp;Update With PC </header>
+    <article>
+          <ol>
+            <li>If you don’t already have the app installed, get it in the
+Microsoft Store</li>
+            <li>Open the Xbox Accessories app.</li>
+            <li>Connect your Xbox Wireless Controller by using a USB cable or the Xbox Wireless Adapter for Windows.</li>
+            <p><strong>Note</strong> You'll be prompted to update to Windows 10 Anniversary Edition if you haven't yet done so.</p>
+            <li>When the controller is connected, you'll see the message Update Required if an update is mandatory. Install the update.</li>
+            </ol>
+      <p><b>Things to keep in mind</b></p>
+      <ul>
+            <li>The Xbox Accessories app is available only on Windows 10.</li>
+            <li>Controllers that don't have a built-in 3.5-mm audio port must be updated using a USB connection and must have the Windows 10 TH2 Update (or later).</li>
+            <li>Updating the controller over Bluetooth is not supported.</li>
+            <li>To customize the Xbox Elite Wireless Controller Series 2 in the Xbox Accessories app, get the Windows 10 May 2019 Update (or later) and make sure your PC has the latest fixes.</li>
+            <li>Bluetooth requires a PC running the Windows 10 Anniversary Update.</li>
+           
+      </ul>
+      
+    </article>
+  </section>
+  
+</main>
+
+<body>
+
+</body>
+</html>
